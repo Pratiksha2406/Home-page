@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Home page</title>
+		<style>
+			body{
+				background-color : #2156b8;
+				margin: 0px;
+				padding : 0px;
+				position : absolute;
+				left: 0%;
+				top: 0%;
+				animation:animate 16s ease-in-out infinite;
+			}
+			@keyframes animate{
+				0%,100%{
+					background-image: url(s4.jpeg);
+				}
+				25%{
+					background-image: url(s1.jpeg);
+				}
+				50%{
+					background-image: url(s.jpeg);
+				}
+				75%{
+					background-image: url(s8.jpeg);
+				}
+				100%{
+					background-image: url(s6.jpeg);
+				}
+				
+			}
+			div{
+				width : 1349px;
+				background-color : white;
+			}
+			#page{
+				background-color : #1f4894;
+				width : 1349px;
+				height : 25px;
+			}
+			button{
+				width : 100px;
+				height : 25px;
+				outline : none;
+				border : none;
+				float : left;
+			}
+			button:hover{
+				background-color : #1f4894;
+				color : white;
+			}
+			input{
+				width : 200px;
+				height : 25px;
+				background-color : black;
+				color : white;
+				margin : 10px;
+				border-radius : 10px;
+				border : 2px solid cyan;
+			}
+			.user{
+				text-align : center; 
+				padding : 10px; 
+				width : 700px; 
+				padding-left : auto; 
+				padding-right : auto;
+				margin-left : auto; 
+				margin-right : auto
+			}
+			h1{
+				text-align : center;
+			}
+			
+		</style>
+	</head>
+	<body>
+		
+		
+		<div id = "page">
+			<button style = "margin-left : 748px" onclick = "visible(6)" checked>Home</button>
+			<button onclick = "visible(1)" >Event</button>
+			<button onclick = "visible(2)" >Login</button>
+			<button onclick = "visible(3)" >Sign up</button>
+			<button onclick = "visible(4)" >Contact Us</button>
+			<button onclick = "visible(5)" >About Us</button>
+			
+		</div>
+		<div id = "display_Home">
+			<img src = "NBA_Accreditation.jpg" width = "1349px">
+		</div>
+		<div id = "display_Event" style = "display : none; background : none;">
+			<h1>Event</h1>
+			<table width ="1220px">
+				<tr>
+					 <img src = "s9.jpeg" width = "300px">
+				</tr>
+				<tr>
+					<td><img src="s10.jpeg" width="665px" height="315px"></td>
+					<td><img src = "s5.jpeg" width = "665px" height = "315px"></td>
+				</tr>
+			</table>
+		</div>
+		<div id = "display_Login" class = "user" style = "display : none; margin-top : 50px;">
+		<h1>Login</h1>
+			<form action="">
+				<label for = "email">Email</label>
+				<input type="email" name="email" id="email" required><br>
+				<label for = "password">Password</label>
+				<input type="password" name="password" id="password" required><br>
+				<input type="submit" value="Submit" onclick = "alert('value are submited')">
+				<input type="reset" value="reset">
+			</form>
+		</div>
+		<div id = "display_Sign_Up" class = "user" style = "display : none; margin-top : 25px;">
+		<h1>Sign Up</h1>
+			<form action="">
+				<label for = "email">Email</label>
+				<input type="email" name="email" id="email" required><br>
+				<label for = "password">Password</label>
+				<input type="text" name="password" id="password" required><br>
+				<label for = "password">Repeat Password</label>
+				<input type="password" name="password" id="password" required><br>
+				<input type="submit" value="Submit" onclick = "alert('value are submited')">
+				<input type="reset" value="reset">
+			</form>
+		</div>
+		<div id = "display_Contact_Details" class = "user" style = "display : none; margin-top : 10px;">
+			<h1>Contact Details</h1>
+			<form action = "">
+				<p>Name <input type="text" name="name" id="name" required></p>
+				<p>Email ID <input type="email" name="email" id="email" required></p>
+				<p>Address <input type="text" name="Address" id="address" required></p>
+				<P>Contact No <input type="number" name="" id="" required></P>
+				<input type="submit" value="Submit" onclick = "alert('value are submited')">
+				<input type="reset" value="reset">
+			</form>
+		</div>
+		<div id = "display_About_Us" style = "display : none">
+			<h1>About Pandharpur</h1>
+			<img src = "img.jpeg" alt = "can't found" style = "float : right; width : 280px">
+			<p>Pandharpur is not a common piece of land. It is popularly known as "South Kashi" of India and also considered as "Spiritual Capital" of Maharashtra. It's an epicenter of inspiration to lakhs of people throughout the country. Lord Vitthal, the incarnation of Vishnu- Shrikrishna - had appeared here in Pandharpur. Shrikrishna is held in Hindu mythology as the complete symbol of devotion to the work. A Karmayogi, who taught that only the devotion to the duty is the final answer to any difficulty. Getting pleased with the devotion of Pundlik towards his duty of taking care of his parents, Lord Vitthal appeared at Pundlik's doorsteps. Pundlik preferred to stick up to his duty and made Lord Vitthal to wait. It is believed that the Lord Vitthal was pleased with this and is still gladly waiting here.Pandharpur, thus, is an icon of virtues. Commitment and undeterred, unqualified devotion to the duty is the message that fills the air of this beautiful region.Pandharpur is at the south of Maharashtra, eight hours of motor drive from Mumbai, Hyderabad and hardly four hours from Pune. Like its rich historical heritage, it is also rich with natural resources, surrounded by irrigated land and flowing river Chandrabhaga.Being agriculturally developed, it is full of fresh air. This nature of the City has provided an insulation from a number of social evils, which have, otherwise threatened other metropolitan cities. Pandharpur, therefore, provides a perfect environment for education. Creating an environment for learning makes the difference in education. Pandharpur has all that in abundance. Students need devotion, and it is in the air of Pandharpur, making it an ideal place for an educational institution. It's different...! .</p>
+			<hr>
+			<h1>Shri Vithal Education & Research Institute (SVERI)- A Charitable trust...</h1>
+			<p>Whenever synergy of young, enthusiastic, sincere, qualified and experienced patriots is created, the institutions of monumental nature come into existence. Shri Vithal Education & Research Institute (SVERI, a Charitable Trust, embarked on its first ambitious project and established Engineering, College at Pandharpur with approval from All India Council for Technical Education (AICTE), New Delhi and To continue with the developmental process. SVERI has started B. Pharmacy and D. Pharmacy courses from the academic year 2006-07 and Diploma in Engineering (Polytechnic) from the academic year 2008-09.</p>
+			<hr>
+			<h1> Founder Secretary & Principal Message</h1>
+			<p>	My Dear Parents,<span><br></span>
+				Only a father can understand the level of anxiety of a father. I am sure, like your children and you are also on cross road and it has become quite a difficult to make a selection of the right path that can lead to a right destination. All our efforts, our sacrifices and our hard work have to promise a bright career to our child.
+				We have dreams for our children and we strive to bring them into reality. However, the present day situation is making our journey difficult. A cut throat competition is the routine and you just cannot move ahead without securing your place in the competition.
+				I personally feel that a degree with higher number of marks is the need of the hour. However, the values for life are equally important for ensuring an all round success of the student. We have therefore, devised the entire
+				The Management is inspired by a different turbo force. We ourselves believe in discipline and follow it. We have unshakable commitment and are proud to witness the rich dividends obtained since the inception of the college.
+				I sincerely invite you to share my dreams which are similar to your dreams. Let us jointly ensure a bright, assuring and enviable engineering career for our child. I assure you that, I am committed to whatever is expressed above.&nbsp; &nbsp;&nbsp;
+				<span style = "float : right">Sincerely,<span><br></span>Dr. B.P. Ronge<span><br></span>Founder Secretary & Principal.</span><span><br></span></p>
+			<br><br>
+			<hr>
+			<h1>Our Vision</h1>
+			<p>To be recognized among the best institutes in India for excellence in technical education.</p>
+			<hr>
+			<h1>Our Mission</h1>
+			<p>To impart value added technical education through ambiance of academic excellence, research and life skills by inculcating personal touch and respect in relationship amongst the stakeholders.<p>
+			<hr>
+			<h1>Our Objective</h1>
+			<ol style = "list-style-type: inherit;">
+				<li>To achieve a status of premier technological institute.</li>
+				<li>To achieve excellence on academic, administrative and personality development fronts through our own channelized pattern of teaching learning process.</li>
+				<li>To develop the state-of-the-art research and development and consultancy cell.</li>
+				<li>To strengthen industry-institute interaction to provide industrial exposure to the students and up-gradation of faculty knowledge about advance trends.</li>
+			</ol>
+			<hr>
+			<h1>Our Quality Policy</h1>
+			<ol style = "list-style-type: inherit;">
+			We are committed for academic and overall development of our students:
+				<li>By effective implementation of teaching learning process.</li>
+				<li>By establishing respectful and pleasant behavior with the students and inculcation of culture of patience and co-operation.</li>
+				<li>By providing ample opportunities for personality development.</li>
+				<li>By creating environment conducive to learning</li>
+			</ol>
+			<hr>
+			<h1>Our Vivid Vision</h1>
+			"Pandharpur Pattern in Professional Education" as the toll for Academic and overall development of the students.
+			The glorious tradition of the standng in the list of meritorious students in the University
+			85 + % Placement of Eligible Candidates through campus recruitment.
+			<h1>Approvals & Accreditations</h1>
+			Approved by All India Council for Technical Education (AICTE), New Delhi.
+			Awarded as 'A' Grade Institute by Govt. of Maharashtra.
+			ISO 9001:2000 certified Institute.
+			Accredited by TCS
+		</div>
+		<script>
+			function visible(num){
+				if(num == 1 && document.getElementById("display_Event").style.display == "none")
+					  document.getElementById("display_Event").style.display = "block";
+				else{
+					document.getElementById("display_Event").style.display = "none";
+				}
+				if(num == 2 && document.getElementById("display_Login").style.display == "none")
+					  document.getElementById("display_Login").style.display = "block";
+				else{
+					document.getElementById("display_Login").style.display = "none";
+				}
+				if(num == 3 && document.getElementById("display_Sign_Up").style.display == "none")
+					  document.getElementById("display_Sign_Up").style.display = "block";
+				else{
+					document.getElementById("display_Sign_Up").style.display = "none";
+				}
+				if(num == 4 && document.getElementById("display_Contact_Details").style.display == "none")
+					  document.getElementById("display_Contact_Details").style.display = "block";
+				else{
+					document.getElementById("display_Contact_Details").style.display = "none";
+				}
+				if(num == 5 && document.getElementById("display_About_Us").style.display == "none")
+					  document.getElementById("display_About_Us").style.display = "block";
+				else{
+					document.getElementById("display_About_Us").style.display = "none";
+				}
+				if(num == 6 && document.getElementById("display_Home").style.display == "none")
+					  document.getElementById("display_Home").style.display = "block";
+				else{
+					document.getElementById("display_Home").style.display = "none";
+				}
+			}
+		</script>
+	</body>
+</htm
